@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shalgar Villa | Premium Homestay at Kaas Plateau</title>
+    <meta name="description" content="Stay close to nature at Shalgar Villa, a premium boutique homestay near Kaas Plateau offering peaceful views, comfortable rooms, family-friendly restaurant, and warm hospitality.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons (Premium elegant icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Leaflet CSS for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Shalgar Villa</span>
+                <span class="logo-subtext">The Homestay</span>
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#rooms" class="nav-link">Rooms</a></li>
+                <li><a href="#experiences" class="nav-link">Experiences</a></li>
+                <li><a href="#social" class="nav-link">Social</a></li>
+                <li><a href="#location" class="nav-link">Location</a></li>
+                <li><a href="#contact" class="btn btn-primary nav-btn">Book Your Stay</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section id="home" class="hero parallax">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal fade-up">
+            <div class="trust-badge">
+                <i class="ph-fill ph-star"></i> 4.7/5 Google Rating · 240+ Reviews
+            </div>
+            <h1 class="hero-title">Stay Close to Nature.<br>Stay at Kaas.</h1>
+            <p class="hero-subtitle">An elegant boutique homestay experience amidst the beauty of Kaas Plateau.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Check Availability</a>
+                <a href="#about" class="btn btn-secondary">Explore Shalgar Villa</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container split-layout">
+            <div class="about-content reveal fade-right">
+                <p class="section-eyebrow">Welcome to</p>
+                <h2 class="section-title">Shalgar Villa</h2>
+                <div class="divider"></div>
+                <p class="section-text">Nestled in the picturesque Petri area, just 136 km from Pune International Airport, Shalgar Villa offers a sanctuary of peace and natural elegance. Our property features a beautiful garden, an outdoor fireplace, and breathtaking 180-degree valley views.</p>
+                <p class="section-text">Enjoy our family-friendly restaurant serving Chinese, British, Indian, Italian, seafood, and local cuisines. Whether you're relaxing in our shared lounge, enjoying the game room, or exploring the Kaas Plateau, we promise a comfortable and memorable stay with top-tier amenities.</p>
+                
+                <div class="quick-facts">
+                    <div class="fact">
+                        <i class="ph ph-clock"></i>
+                        <div>
+                            <strong>Check-in:</strong> 1:00 PM - 10:00 PM<br>
+                            <strong>Check-out:</strong> 8:00 AM - 11:00 AM
+                        </div>
+                    </div>
+                    <div class="fact">
+                        <i class="ph ph-paw-print"></i>
+                        <div>
+                            <strong>Pet Friendly</strong><br>
+                            Pets are welcome
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#rooms" class="btn btn-outline mt-4">View Our Rooms</a>
+            </div>
+            <div class="about-image-container reveal fade-left">
+                <img src="images/shalgar main.jpg" alt="Shalgar Villa Exterior" class="rounded-image shadow-lg">
+                <div class="floating-badge">
+                    <i class="ph ph-wifi-high"></i>
+                    <span>Free Wi-Fi</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Amenities Section -->
+    <section class="section features-section bg-cream">
+        <div class="container">
+            <div class="section-header text-center reveal fade-up">
+                <p class="section-eyebrow">Our Facilities</p>
+                <h2 class="section-title">Everything You Need</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">Experience comfort and convenience with our comprehensive range of on-site amenities.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card reveal fade-up" style="transition-delay: 0.1s;">
+                    <div class="feature-icon"><i class="ph-light ph-car-profile"></i></div>
+                    <h3 class="feature-title">Free Parking</h3>
+                    <p class="feature-text">Secure, free private parking available on-site for all our guests.</p>
+                </div>
+                <div class="feature-card reveal fade-up" style="transition-delay: 0.2s;">
+                    <div class="feature-icon"><i class="ph-light ph-fork-knife"></i></div>
+                    <h3 class="feature-title">Dining & Restaurant</h3>
+                    <p class="feature-text">On-site restaurant with room service. Continental, Full English, Vegetarian, and Halal breakfast options.</p>
+                </div>
+                <div class="feature-card reveal fade-up" style="transition-delay: 0.3s;">
+                    <div class="feature-icon"><i class="ph-light ph-game-controller"></i></div>
+                    <h3 class="feature-title">Entertainment</h3>
+                    <p class="feature-text">Enjoy our games room, karaoke facilities, and beautiful gardens for relaxation.</p>
+                </div>
+                <div class="feature-card reveal fade-up" style="transition-delay: 0.4s;">
+                    <div class="feature-icon"><i class="ph-light ph-house-line"></i></div>
+                    <h3 class="feature-title">Comfortable Rooms</h3>
+                    <p class="feature-text">Air-conditioned family rooms featuring full kitchens, balconies, and private bathrooms.</p>
+                </div>
+                <div class="feature-card reveal fade-up" style="transition-delay: 0.5s;">
+                    <div class="feature-icon"><i class="ph-light ph-shield-check"></i></div>
+                    <h3 class="feature-title">Safety & Cleanliness</h3>
+                    <p class="feature-text">24-hour security, CCTV, and rigorous daily housekeeping and sanitization protocols.</p>
+                </div>
+                <div class="feature-card reveal fade-up" style="transition-delay: 0.6s;">
+                    <div class="feature-icon"><i class="ph-light ph-mountains"></i></div>
+                    <h3 class="feature-title">Activities</h3>
+                    <p class="feature-text">Perfect base for hiking, exploring waterfalls, and local tours around Kaas Plateau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="section rooms-section">
+        <div class="container">
+            <div class="section-header text-center reveal fade-up">
+                <p class="section-eyebrow">Accommodation</p>
+                <h2 class="section-title">Elegant Stays</h2>
+                <div class="divider mx-auto"></div>
+                <p class="section-subtitle">Choose our spacious villas designed for family comfort and natural immersion.</p>
+            </div>
+
+            <div class="rooms-grid">
+                <!-- Three-Bedroom Villa -->
+                <div class="room-card reveal fade-right">
+                    <div class="room-image-wrapper">
+                        <img src="images/shalgar room 1.jpg" alt="Three-Bedroom Villa" class="room-image">
+                        <div class="room-capacity"><i class="ph-fill ph-users"></i> Up to 10 Guests</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">Three-Bedroom Villa</h3>
+                        <p class="room-desc">An expansive, elegant villa perfect for large families or groups. Features a full kitchen, lounge, and stunning views.</p>
+                        
+                        <div class="bed-configuration">
+                            <strong><i class="ph ph-bed"></i> Bedding:</strong> 3 Large Double Beds & 2 Sofa Beds
+                        </div>
+
+                        <ul class="room-amenities">
+                            <li><i class="ph ph-wind"></i> Air Conditioning</li>
+                            <li><i class="ph ph-cooking-pot"></i> Full Kitchen</li>
+                            <li><i class="ph ph-bathtub"></i> Private Bathroom</li>
+                            <li><i class="ph ph-tree"></i> Balcony/Terrace</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline room-btn">Enquire Now</a>
+                    </div>
+                </div>
+
+                <!-- One-Bedroom Villa -->
+                <div class="room-card reveal fade-left">
+                    <div class="room-image-wrapper">
+                        <img src="images/shalgar room 2.jpg" alt="One-Bedroom Villa" class="room-image">
+                        <div class="room-capacity"><i class="ph-fill ph-users"></i> 2-3 Guests</div>
+                    </div>
+                    <div class="room-content">
+                        <h3 class="room-title">One-Bedroom Villa</h3>
+                        <p class="room-desc">A cozy and luxurious retreat ideal for couples or small families, offering intimacy and direct access to nature.</p>
+                        
+                        <div class="bed-configuration">
+                            <strong><i class="ph ph-bed"></i> Bedding:</strong> 1 Double Bed
+                        </div>
+
+                        <ul class="room-amenities">
+                            <li><i class="ph ph-wind"></i> Air Conditioning</li>
+                            <li><i class="ph ph-monitor"></i> TV & Lounge Area</li>
+                            <li><i class="ph ph-bathtub"></i> Private Bathroom</li>
+                            <li><i class="ph ph-armchair"></i> Outdoor Patio</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-outline room-btn">Enquire Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="policies-notice reveal fade-up mt-8 text-center">
+                <p><small><em>* Please note: When booking more than 5 rooms, different policies and additional supplements may apply. Taxes may be revised due to government policies.</em></small></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider -->
+    <section class="parallax-divider parallax" style="background-image: url('images/exterior_day.jpg');">
+        <div class="parallax-content text-center reveal fade-up">
+            <h2>Discover the Magic of Kaas</h2>
+            <p>A UNESCO World Heritage Site just moments away.</p>
+
+            <!-- Kaas gallery (kaas0 - kaas3) -->
+            <div class="kaas-gallery" aria-label="Kaas gallery">
+                <div class="kaas-item"><img src="images/kaas0.webp" alt="Kaas view 0" loading="lazy"></div>
+                <div class="kaas-item"><img src="images/kaas1.jpg" alt="Kaas view 1" loading="lazy"></div>
+                <div class="kaas-item"><img src="images/kaas2.webp" alt="Kaas view 2" loading="lazy"></div>
+                <div class="kaas-item"><img src="images/kaas3.jpg" alt="Kaas view 3" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="social" class="section social-section bg-cream">
+        <div class="container text-center reveal fade-up">
+            <i class="ph-fill ph-instagram-logo section-icon" style="font-size: 3rem; color: var(--clr-primary); margin-bottom: 1rem;"></i>
+            <h2 class="section-title">Follow Our Journey</h2>
+            <p class="section-subtitle mb-8">Stay updated with our latest views, guests' experiences, and nature's beauty on Instagram.</p>
+            
+            <div class="ig-preview-container">
+                <!-- Decorative Instagram-like grid representation (populated with all images from the images/ folder) -->
+                <div class="ig-grid">
+                    <div class="ig-item"><img src="images/shalagr%203.jpg" alt="Shalgar exterior 3" loading="lazy"></div>
+                    <div class="ig-item"><img src="images/shalgar%202.jpg" alt="Shalgar exterior 2" loading="lazy"></div>
+                    <div class="ig-item"><img src="images/shalgar%204.jpg" alt="Shalgar exterior 4" loading="lazy"></div>
+                    <div class="ig-item"><img src="images/shalgar%20main.jpg" alt="Shalgar main" loading="lazy"></div>
+                    <div class="ig-item"><img src="images/shalgar%20room%201.jpg" alt="Shalgar room 1" loading="lazy"></div>
+                    <div class="ig-item"><img src="images/shalgar%20room%202.jpg" alt="Shalgar room 2" loading="lazy"></div>
+                    <div class="ig-item"><img src="images/shalgar%20sideview.jpg" alt="Shalgar side view" loading="lazy"></div>
+                </div>
+            </div>
+            
+            <div class="instagram-cta mt-8">
+                <p class="instagram-text">Connect with us on Instagram</p>
+                <a href="https://www.instagram.com/shalgarvilla?igsi=MXhxNWR1NmJud2VqNg==" target="_blank" class="instagram-btn" aria-label="Open Instagram profile">
+                    <i class="ph-bold ph-instagram-logo" aria-hidden="true"></i>
+                    <span>@shalgarvilla</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section with Leaflet -->
+    <section id="location" class="section location-section">
+        <div class="container split-layout">
+            <div class="location-content reveal fade-right">
+                <p class="section-eyebrow">Find Us</p>
+                <h2 class="section-title">Location & Access</h2>
+                <div class="divider"></div>
+                <p class="section-text">Shalgar Villa is strategically located in Petri, offering easy access to the Kaas Plateau while maintaining a secluded, peaceful atmosphere.</p>
+                
+                <div class="contact-info-list">
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap"><i class="ph-bold ph-map-pin"></i></div>
+                        <div>
+                            <strong>Address:</strong><br>
+                            Petri, Kaas Road. Shalgar Villa<br>
+                            Kas, Satara, Maharashtra, India, 415013
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon-wrap"><i class="ph-bold ph-airplane-tilt"></i></div>
+                        <div>
+                            <strong>Nearest Airport:</strong><br>
+                            Pune International Airport (136 km)
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="https://maps.google.com/?q=Petri,+Kaas+Road,+Shalgar+Villa,+Satara" target="_blank" class="btn btn-outline mt-4">Open in Google Maps</a>
+            </div>
+            <div class="map-container reveal fade-left">
+                <!-- Leaflet Map Container -->
+                <div id="leaflet-map" style="height: 100%; width: 100%; z-index: 1;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact" class="section cta-section parallax" style="background-image: url('images/exterior_night.jpg');">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="cta-card text-center reveal fade-up">
+                <h2 class="section-title text-white">Plan Your Escape</h2>
+                <p class="cta-subtitle">Contact our private host to reserve your villa today.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/918208722183" target="_blank" class="btn btn-whatsapp">
+                        <i class="ph-bold ph-whatsapp-logo" style="font-size: 1.25rem;"></i> WhatsApp Us
+                    </a>
+                    <a href="tel:+918208722183" class="btn btn-primary">
+                        <i class="ph-bold ph-phone" style="margin-right: 8px;"></i> Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col reveal fade-up" style="transition-delay: 0.1s;">
+                    <h3 class="footer-logo">Shalgar Villa</h3>
+                    <p class="footer-desc">An elegant boutique homestay offering comfortable family villas, fine dining, and unmatched views of the Kaas Plateau valley.</p>
+                </div>
+                <div class="footer-col reveal fade-up" style="transition-delay: 0.2s;">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#rooms">Accommodation</a></li>
+                        <li><a href="#social">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal fade-up" style="transition-delay: 0.3s;">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><i class="ph-bold ph-phone" style="margin-right: 8px;"></i> +91 8208722183</li>
+                        <li><i class="ph-bold ph-envelope" style="margin-right: 8px;"></i> info@shalgarvilla.com</li>
+                        <li><i class="ph-bold ph-map-pin" style="margin-right: 8px;"></i> Petri, Kaas Road, Satara</li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal fade-up" style="transition-delay: 0.4s;">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/shalgarvilla?igsi=MXhxNWR1NmJud2VqNg==" target="_blank" class="social-icon" aria-label="Instagram">
+                            <i class="ph-fill ph-instagram-logo"></i>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <i class="ph-fill ph-facebook-logo"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom reveal fade-up">
+                <p>&copy; 2026 Shalgar Villa – The Homestay. All rights reserved. | Managed by a private host.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
